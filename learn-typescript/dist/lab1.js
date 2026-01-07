@@ -46,4 +46,3 @@ console.log(`Số lượng ký tự 'o': ${demKyTu("Hello World", "o")}`);
 console.log("\n--- Bài 4: Kiểm tra số nguyên tố ---");
 console.log(`Số 7 là nguyên tố? -> ${kiemTraNguyenTo(7)}`);
 console.log(`Số 10 là nguyên tố? -> ${kiemTraNguyenTo(10)}`);
-//# sourceMappingURL=lab1.js.map

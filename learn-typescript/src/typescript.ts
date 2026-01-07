@@ -41,3 +41,4 @@ multiType = "Success"; // Hợp lệ
 let status: "success" | "error" | "loading";
 status = "success"; // Hợp lệ
 // status = "failed"; // Lỗi
+
