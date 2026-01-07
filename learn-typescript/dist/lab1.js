@@ -8,14 +8,12 @@ function tinhHinhChuNhat(dai, rong) {
     return { chuVi, dienTich };
 }
 // 2. Hàm tính tổng nhiều số (sử dụng rest parameter)
-// Rest parameter (...args) giúp nhận vô số tham số truyền vào dưới dạng mảng
 function tinhTong(...so) {
     let tong = 0;
     so.forEach((num) => {
         tong += num;
     });
     return tong;
-    // Cách ngắn gọn hơn: return so.reduce((a, b) => a + b, 0);
 }
 // 3. Hàm trả về số lượng xuất hiện của 1 kí tự trong chuỗi
 function demKyTu(chuoi, kyTuCanTim) {
@@ -30,15 +28,14 @@ function demKyTu(chuoi, kyTuCanTim) {
 // 4. Hàm trả về boolean kiểm tra 1 số có phải số nguyên tố
 function kiemTraNguyenTo(n) {
     if (n < 2)
-        return false; // Số nhỏ hơn 2 không phải nguyên tố
+        return false;
     for (let i = 2; i <= Math.sqrt(n); i++) {
         if (n % i === 0) {
-            return false; // Nếu chia hết cho số nào đó thì không phải nguyên tố
+            return false;
         }
     }
     return true;
 }
-// --- PHẦN KIỂM TRA (CONSOLE LOG) ---
 console.log("--- Bài 1: Hình chữ nhật (Dài 10, Rộng 5) ---");
 const hcn = tinhHinhChuNhat(10, 5);
 console.log(`Chu vi: ${hcn.chuVi}, Diện tích: ${hcn.dienTich}`);
